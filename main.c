@@ -8,8 +8,8 @@ static bool getInput(void);
 
 int main(void){
 	printf("Welcome to Little Cave Adventures.\n");
-	while(parseAndExecute(input) && getInput());
 	printf("It is very dark in here.\n");
+	while(parseAndExecute(input) && getInput());
 	printf("Bye-bye!\n");
 	
 	return 0;
@@ -18,5 +18,4 @@ int main(void){
 static bool getInput(void){
 	printf("\n> ");
 	return ((fgets(input, sizeof(input), stdin) != NULL));
-	return
 }
